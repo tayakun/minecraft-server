@@ -3,20 +3,20 @@
 #
 
 resource "aws_codepipeline" "continuous_apply" {
-  name = "minecraf-server-continuous-apply"
+  name     = "minecraf-server-continuous-apply"
   role_arn = ""
   artifact_store {
     location = ""
-    type = ""
+    type     = ""
   }
   stage {
     name = ""
     action {
       category = ""
-      name = ""
-      owner = ""
+      name     = ""
+      owner    = ""
       provider = ""
-      version = ""
+      version  = ""
     }
   }
 }
@@ -26,15 +26,15 @@ resource "aws_codepipeline" "continuous_apply" {
 #
 
 resource "aws_codebuild_project" "plan" {
-  name = ""
+  name         = ""
   service_role = ""
   artifacts {
     type = ""
   }
   environment {
     compute_type = ""
-    image = ""
-    type = ""
+    image        = ""
+    type         = ""
   }
   source {
     type = ""
@@ -42,15 +42,15 @@ resource "aws_codebuild_project" "plan" {
 }
 
 resource "aws_codebuild_project" "apply" {
-  name = ""
+  name         = ""
   service_role = ""
   artifacts {
     type = ""
   }
   environment {
     compute_type = ""
-    image = ""
-    type = ""
+    image        = ""
+    type         = ""
   }
   source {
     type = ""
